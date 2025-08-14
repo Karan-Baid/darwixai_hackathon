@@ -39,6 +39,7 @@ You should see something like:
    - src/crew.py
    - src/main.py
    - src/tools/custom_tool.py
+     
    Run the command:
 
    crewai install
