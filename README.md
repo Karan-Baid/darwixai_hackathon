@@ -1,29 +1,36 @@
 # darwixai_hackathon
 # Hackathon Crew Project Setup Guide
 
+
+**Linux based installation**
+
 1. Install uv (Astral):
    
-wget -qO- https://astral.sh/uv/install.sh | sh
+    wget -qO- https://astral.sh/uv/install.sh | sh
 
 
-3. Install CrewAI CLI:
+2. Install CrewAI CLI:
 
-uv tool install crewai
+    uv tool install crewai
 
-4. Verify installation:
+3. Verify installation:
    
-uv tool list
+    uv tool list
 
 
 You should see something like:
-crewai v0.102.0
-* crewai
+
+    crewai v0.102.0
+
+    crewai
 
 4. Create project directory:
-crewai create crew research_crew
-cd research_crew
 
-(Select Groq as the provider and select groq/gemma2-9b-it)
+    crewai create crew research_crew
+    
+    cd research_crew
+
+**(Select Groq as the provider and select groq/gemma2-9b-it)**
 
 6. Update project files from the GitHub repo:
    
@@ -33,21 +40,33 @@ cd research_crew
 - src/main.py
 - src/tools/custom_tool.py
 Run the command:
+
 crewai install
 
 7. Add API key:
 Create a .env file in the project root and add:
+
 GROQ_API_KEY=your_api_key_here
 
 8. Run the following commands :
-python3 -m venv crewai_env
-source crewai_env/bin/activate
-pip install --upgrade pip
-pip install requests beautifulsoup4 crewai
-deactivate
-mv crewai_env .venv
-source .venv/bin/activate
-crewai install
+
+    python3 -m venv crewai_env
+    
+    source crewai_env/bin/activate
+
+    pip install --upgrade pip
+
+    pip install requests beautifulsoup4 crewai
+
+    deactivate
+
+    mv crewai_env .venv
+
+    source .venv/bin/activate
+
+    crewai install
 
 10. Run the project:
 crewai run
+
+
