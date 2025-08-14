@@ -34,19 +34,19 @@ You should see something like:
 
 6. Update project files from the GitHub repo:
    
-- src/config/agents.yaml
-- src/config/tasks.yaml
-- src/crew.py
-- src/main.py
-- src/tools/custom_tool.py
-Run the command:
+   - src/config/agents.yaml
+   - src/config/tasks.yaml
+   - src/crew.py
+   - src/main.py
+   - src/tools/custom_tool.py
+   Run the command:
 
-crewai install
+   crewai install
 
 7. Add API key:
-Create a .env file in the project root and add:
+   Create a .env file in the project root and add:
 
-GROQ_API_KEY=your_api_key_here
+   GROQ_API_KEY=your_api_key_here
 
 8. Run the following commands :
 
@@ -67,6 +67,7 @@ GROQ_API_KEY=your_api_key_here
     crewai install
 
 10. Run the project:
-crewai run
+    
+   crewai run
 
 
