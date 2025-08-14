@@ -4,11 +4,14 @@
 1. Install uv (Astral):
 wget -qO- https://astral.sh/uv/install.sh | sh
 
+
 2. Install CrewAI CLI:
 uv tool install crewai
 
 3. Verify installation:
 uv tool list
+
+
 You should see something like:
 crewai v0.102.0
 * crewai
@@ -16,9 +19,10 @@ crewai v0.102.0
 4. Create project directory:
 crewai create crew research_crew
 cd research_crew
-(Select Groq as the provider and any model you like)
+(Select Groq as the provider and select groq/gemma2-9b-it)
 
 5. Update project files from the GitHub repo:
+   
 - src/config/agents.yaml
 - src/config/tasks.yaml
 - src/crew.py
