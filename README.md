@@ -32,7 +32,7 @@ You should see something like:
 
 **(Select Groq as the provider and select groq/gemma2-9b-it)**
 
-6. Update project files from the GitHub repo:
+5. Update project files from the GitHub repo:
    
    - src/config/agents.yaml
    - src/config/tasks.yaml
@@ -42,14 +42,14 @@ You should see something like:
      
    Run the command:
 
-   crewai install
+      crewai install
 
-7. Add API key:
+6. Add API key:
    Create a .env file in the project root and add:
 
    GROQ_API_KEY=your_api_key_here
 
-8. Run the following commands :
+7. Run the following commands :
 
     python3 -m venv crewai_env
     
@@ -67,8 +67,8 @@ You should see something like:
 
     crewai install
 
-10. Run the project:
+8. Run the project:
     
-   crewai run
+      crewai run
 
 
