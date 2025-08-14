@@ -2,13 +2,16 @@
 # Hackathon Crew Project Setup Guide
 
 1. Install uv (Astral):
+   
 wget -qO- https://astral.sh/uv/install.sh | sh
 
 
-2. Install CrewAI CLI:
+3. Install CrewAI CLI:
+
 uv tool install crewai
 
-3. Verify installation:
+4. Verify installation:
+   
 uv tool list
 
 
@@ -19,9 +22,10 @@ crewai v0.102.0
 4. Create project directory:
 crewai create crew research_crew
 cd research_crew
+
 (Select Groq as the provider and select groq/gemma2-9b-it)
 
-5. Update project files from the GitHub repo:
+6. Update project files from the GitHub repo:
    
 - src/config/agents.yaml
 - src/config/tasks.yaml
