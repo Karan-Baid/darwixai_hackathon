@@ -32,11 +32,22 @@ cd research_crew
 - src/crew.py
 - src/main.py
 - src/tools/custom_tool.py
-
+Run the command:
+crewai install
 
 7. Add API key:
 Create a .env file in the project root and add:
 GROQ_API_KEY=your_api_key_here
 
-8. Run the project:
+8. Run the following commands :
+python3 -m venv crewai_env
+source crewai_env/bin/activate
+pip install --upgrade pip
+pip install requests beautifulsoup4 crewai
+deactivate
+mv crewai_env .venv
+source .venv/bin/activate
+crewai install
+
+10. Run the project:
 crewai run
