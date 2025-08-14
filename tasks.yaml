@@ -1,0 +1,26 @@
+# src/research_crew/config/tasks.yaml
+research_task:
+  description: >
+    Use the provided URL ({url}) to fetch and extract the main body text of the news article.
+    Include the title, author (if available), publication date, and all main text paragraphs.
+    Remove unrelated content like ads, navigation, and comments.
+    Provide the clean article text as your output.
+  expected_output: >
+    A clean, plain-text version of the article including title, author, date, and main content.
+  agent: researcher
+
+analysis_task:
+  description: >
+    Analyze the provided news article text and create a Markdown "Critical Analysis Report" with the following sections:
+    1. Core Claims — 3–5 main factual claims from the article.
+    2. Language & Tone Analysis — describe and classify tone (neutral, emotional, persuasive, etc.).
+    3. Potential Red Flags — list indicators of bias or weak reporting.
+    4. Verification Questions — 3–4 questions the reader should ask to verify claims.
+    BONUS: Perform Named Entity Recognition to identify key people, organizations, and locations, and suggest what to investigate.
+    BONUS: Summarize the article from a hypothetical opposing viewpoint.
+  expected_output: >
+    A well-formatted Markdown report containing all sections, saved to output/report.md.
+  agent: analyst
+  context:
+    - research_task
+  output_file: output/report.md
