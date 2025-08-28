@@ -1,34 +1,41 @@
+
+# Research Crew
+
+Welcome to **Research Crew** – a modular, extensible research automation framework powered by [crewAI](https://crewai.com). This project helps you set up a multi-agent AI system with ease, enabling agents to collaborate on complex tasks and maximize their collective intelligence.
+
+
+---
+
+## 🚀 Getting Started
 # darwixai_hackathon
 # Hackathon Crew Project Setup Guide
-
 
 **Linux based installation**
 
 1. Install uv (Astral):
    
-    wget -qO- https://astral.sh/uv/install.sh | sh
-
+	wget -qO- https://astral.sh/uv/install.sh | sh
 
 2. Install CrewAI CLI:
 
-    uv tool install crewai
+	uv tool install crewai
 
 3. Verify installation:
    
-    uv tool list
+	uv tool list
 
 
 You should see something like:
 
-    crewai v0.102.0
+	crewai v0.102.0
 
-    crewai
+	crewai
 
 4. Create project directory:
 
-    crewai create crew research_crew
+	crewai create crew research_crew
     
-    cd research_crew
+	cd research_crew
 
 **(Select Groq as the provider and select groq/gemma2-9b-it)**
 
@@ -42,7 +49,7 @@ You should see something like:
      
    Run the command:
 
-      crewai install
+	  crewai install
 
 6. Add API key:
    Create a .env file in the project root and add:
@@ -51,24 +58,25 @@ You should see something like:
 
 7. Run the following commands :
 
-    python3 -m venv crewai_env
+	python3 -m venv crewai_env
     
-    source crewai_env/bin/activate
+	source crewai_env/bin/activate
 
-    pip install --upgrade pip
+	pip install --upgrade pip
 
-    pip install requests beautifulsoup4 crewai
+	pip install requests beautifulsoup4 crewai
 
-    deactivate
+	deactivate
 
-    mv crewai_env .venv
+	mv crewai_env .venv
 
-    source .venv/bin/activate
+	source .venv/bin/activate
 
-    crewai install
+	crewai install
 
 8. Run the project:
     
-      crewai run
+	  crewai run
 
 **The output will be saved in the report.md file in the output directory.**
+
