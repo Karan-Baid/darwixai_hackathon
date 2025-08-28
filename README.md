@@ -59,20 +59,17 @@ You should see something like:
 7. Run the following commands :
 
 	python3 -m venv crewai_env
-    
-	source crewai_env/bin/activate
+source crewai_env/bin/activate
 
-	pip install --upgrade pip
+pip install --upgrade pip
+pip install requests beautifulsoup4 crewai
 
-	pip install requests beautifulsoup4 crewai
+deactivate
+mv crewai_env .venv
+source .venv/bin/activate
 
-	deactivate
+crewai install
 
-	mv crewai_env .venv
-
-	source .venv/bin/activate
-
-	crewai install
 
 8. Run the project:
     
